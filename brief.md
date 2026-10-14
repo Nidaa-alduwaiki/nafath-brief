@@ -16,7 +16,7 @@ Overfitting occurs when a model learns the training data too closely, including 
 Resource: Cross-validation: evaluating estimator performance - https://scikit-learn.org/stable/modules/cross_validation.html
 
 ## Mobile
-The app should support offline functionality so responders can access important information when the network is unavailable. It can store data locally and allow responders to record updates without an internet connection. When connectivity returns, the app synchronizes saved changes with the server and updates the data. This helps emergency teams continue their work during network outages and reduces the risk of losing important information.
+The app should support offline functionality so responders can access important information when the network is unavailable. It can store data locally and allow responders to record updates without an internet connection. Changes made offline can wait in a queue and be sent to the server when connectivity returns. The app should also handle conflicts when different users update the same record, helping keep information consistent and reducing the risk of data loss.
 
 Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
 
