@@ -36,5 +36,7 @@ A star schema connects a central fact table to dimension tables, such as date an
 Resource: Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
+A common misconception is that a reporting database can keep everything in one table, mixing measurements with descriptions of region and date. In reality, a good model separates the roles: dimension tables enable filtering and grouping, while fact tables enable summarization. For example, a usage report per region per day can use a fact table of usage measurements linked to date and region dimensions. The Microsoft Learn section "Star schema relevance to Power BI semantic models" advises avoiding mixing the two types in one table.
 
 ## Open Question
+How can the operator use daily 5G usage data to predict congestion in specific regions before it affects emergency responders, and would daily data provide enough detail for timely predictions?
