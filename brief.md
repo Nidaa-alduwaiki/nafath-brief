@@ -21,10 +21,19 @@ The app should support offline functionality so responders can access important 
 Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
 
 ## Networking
+5G network slicing divides a shared physical network into logical networks with different capabilities and characteristics. Each slice can be tailored to specific service requirements through a Service Level Agreement (SLA) and may use dedicated or shared resources. For emergency responders, a dedicated slice can be configured to provide suitable capacity and isolate resources from other slices. This can help maintain communication during network congestion, depending on how the operator configures and manages the network.
+
+Resource: Generic Network Slice Template (NG.116) - https://www.gsma.com/newsroom/wp-content/uploads/NG.116-v3.0.pdf
 
 ## Cybersecurity
+Incident response helps an organization manage cyberattacks and reduce their impact. Govern, Identify and Protect prepare the operator through risk management. Detect finds and analyzes attacks, such as abnormal traffic on the emergency slice. Respond contains the incident, for example by blocking malicious traffic while prioritizing emergency communications. Recover restores affected systems and services. Lessons learned then help improve future security practices.
+
+Resource: SP 800-61 Rev. 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management - https://csrc.nist.gov/pubs/sp/800/61/r3/final
 
 ## Data
+A star schema connects a central fact table to dimension tables, such as date and region. A snowflake schema splits dimension data into additional related tables to reduce repeated information. For 5G service usage reports per region per day, a star schema is a suitable choice because its simpler structure makes it easier to filter, group, and summarize usage data by date and region.
+
+Resource: Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
 
